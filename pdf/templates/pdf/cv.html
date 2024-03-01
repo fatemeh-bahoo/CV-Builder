@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CV</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	</head>
+<body>
+	<div class="container">
+
+		<div class="col-md-6">
+			<h3>Full Name</h3>					
+			<p>{{ profiles.name}} </p>
+			<p><b>Website: </b><a href="#">{{ profiles.website}}</a></p>
+		</div> 
+		<hr>
+		<div class="col-md-6">
+			<h3>Career Goal</h3>
+			<p>{{ profiles.summary}}</p>
+		</div>
+		<hr>
+		<div class="col-md-6">
+			<h3>Skills</h3>
+			<p>{{ profiles.skills}}</p>
+		</div>	
+		<hr>
+
+		<div class="col-md-6">
+			<h3>Previous Work</h3>
+			<p>{{ profiles.previous_work}}</p>
+		</div>	
+		<hr>
+
+		<div class="col-md-6">
+			<h3>Phone</h3>
+			<p>{{ profiles.phone}}</p>
+		</div>
+		<hr>
+		<div class="col-md-6">
+			<h3>Email</h3>
+			<p>{{ profiles.email}}</p>
+		</div>
+		<hr>
+		<div class="col-md-6">
+			<h3>Education</h3>
+			<p><b>School: </b>{{ profiles.school}}</p>
+			<p><b>University: </b>{{ profiles.university}}</p>
+		</div>
+	
+</div>
+</body>
+</html> 
